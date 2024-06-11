@@ -1,0 +1,98 @@
+Vamos começar a programar o rodapé da página começando pela criação do código html
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Encontrar uma diarista</a>
+                        </li>
+                        <li>
+                            <a href="#">Seja um(a) diarista</a>
+                        </li>
+                        <li>
+                            <a href="#">Porquê usar o E-Diarista</a>
+                        </li>
+                        <li>
+                            <a href="#">Principais dúvidas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <h4>Quem somos</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam eget ligula eu lectus lobortis condimentum. Aliquam
+                        nonummy auctor massa. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis
+                        egestas. Nulla at risus.</p>
+                </div>
+                <div class="footer-item">
+                    <h4>Redes sociais</h4>
+                    <div class="social-media">
+                        <a href="#"><i class="twf-facebook"></i></a>
+                        <a href="#"><i class="twf-instagram"></i></a>
+                        <a href="#"><i class="twf-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+Vamos agora começar a criar nossas conteudo com css e dar mais largura na coluna do meio
+
+
+footer {
+    background-color: var(--primary);
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 50px;
+}
+
+.footer-item {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul a {
+    color: #fff;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-media i {
+    color: var(--light-grey);
+    font-size: 30px;
+}
+
+.social-media a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #581ecd;
+    display: grid;
+    place-items: center;
+}
+
+.social-media a:hover {
+    transform: scale(1.07);
+    transition: .4s;
+}

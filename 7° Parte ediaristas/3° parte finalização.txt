@@ -1,0 +1,61 @@
+Finalizando os botões
+
+Vamos adicionar nossas classes nos botões 
+
+.btn-form a {
+    display: none;
+}
+
+.btn-form button {
+    padding: 17px 20px;
+    width: 250px;
+    border-radius: 3px;
+    outline: auto;
+    color: #fff;
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.principal-content {
+    display: grid;
+    place-items: center;
+    margin: 50px 0;
+    padding: 50px;
+    box-shadow: 1px 1px 15px rgba(168, 168, 168, 0.313);
+}
+
+Vamos por ultimo estilizar nosso mobile para adaptção
+
+@media(max-width: 768px) {
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .form-field {
+        width: 100%;
+        padding: 50px 10px;
+    }
+
+    .principal-content {
+        padding: 50px 10px;
+    }
+
+    .btn-form {
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .btn-form a {
+        display: inline-grid;
+        justify-content: center;
+        border: solid 2px var(--primary);
+        color: var(--primary);
+        padding: 10px 0;
+    }
+
+}
+
+Vamos também fazer o link das páginas

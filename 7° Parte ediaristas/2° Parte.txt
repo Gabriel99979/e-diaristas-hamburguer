@@ -1,0 +1,97 @@
+Vamos começar a estilizar o conteúdo html
+
+Vamos criar uma única sections
+
+<section>
+            <div class="seguro-field">
+                <div class="container seguro">
+                    <p>Ambiente 100% seguro</p>
+                    <i class="twf-lock"></i>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="page-title">Informe seu e-mail e senha</h2>
+                <div class="principal-content">
+                    <div class="form-field">
+                        <form>
+                            <input type="email" placeholder="E-mail">
+                            <input type="password" placeholder="Senha">
+                            <a href="#" class="password-recover">Esqueci minha senha</a>
+                            <div class="btn-form">
+                                <button type="submit">Entrar</button>
+                                <a href="#">Voltar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+Vamos colar o footer no fundo com mais configurações
+
+ footer{
+position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+Vamos colocar também nosso main content 
+
+.seguro-field {
+    background-color: #fafafa;
+    position: sticky;
+    top: 0;
+}
+
+.seguro {
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.seguro p {
+    margin: 0;
+}
+
+.page-title {
+    color: var(--primary);
+    text-align: center;
+}
+
+.principal-content {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    padding-bottom: 70px;
+}
+
+.form-field {
+    width: 500px;
+}
+
+.principal-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.principal-content form input {
+    border: solid 2px #f0f0f0;
+    background-color: #fafafa;
+    padding: 15px;
+}
+
+.principal-content form input:focus {
+    outline: none;
+}
+
+.principal-content form input::placeholder {
+ color: #c4c4c4;   
+}
+
+.password-recover {
+    color: #9b9b9b;
+}

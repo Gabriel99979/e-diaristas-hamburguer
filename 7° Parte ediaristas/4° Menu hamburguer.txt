@@ -1,0 +1,72 @@
+html
+
+
+ <header>
+        <div class="container">
+            <div class="nav-menu">
+                <img src="./img/Logo-Ediaristas.png" alt="Logo E-diaristas">
+                <div class="btn-header">
+                    <a class="btn-contained" href="#">Seja uma diarista</a>
+                    <a class="btn-void" href="./login.html">Login</a>
+                </div>
+                <nav class="btn-header-mobile">
+                    <a class="btn-contained-mobile" href="#">Seja uma diarista</a>
+                    <a class="btn-void-mobile" href="./login.html">Login</a>
+                </nav>
+            </div>
+        </div>
+</header>
+
+
+
+css
+
+header {
+    padding: 15px 0;
+    box-shadow: 1px 0 15px rgba(98, 98, 98, 0.294);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-contained {
+    background-color: var(--primary);
+    padding: 10px 35px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn-void{
+    background-color: #FAFAFA;
+    padding: 10px 35px;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+/* Menu mobile*/
+
+.btn-header-mobile {
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}

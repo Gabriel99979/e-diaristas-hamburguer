@@ -1,0 +1,10 @@
+Vamos criar um novo arquivo login.html
+
+e criaremos também um outro arquivo login.css
+
+Para aproveitarmos boa parte do código sem a necessidade de utilizar uma biblioteca ou framework front end vamos dar ctrl + a
+e passar para o login.css 
+
+Vamos tirar as sections e o script pois não iremos aproveitarmos
+
+Vamos retirar do footer até o principal para não carregarmos css desnecessário

@@ -1,0 +1,78 @@
+Vamos criar um componente chamado de acordion que se espande quando o usuário
+tecla
+
+Vamos baixar nossa imagem de onda
+Vamos criar a secção e dar o nome de faqs que indica as perguntas mais feitas pelos usuários
+
+Vamos criar a div para colocar a imagem de wave vamos colocar como background-image pois ela não distorce independente
+do tamanho da tela
+essa div serve apenas para colocar nossa estilização
+
+
+colocamos position relative para podermos mover o elemento em relação a página
+
+Vamos voltar na nossa classe porq e vamos colocar 150px no bottom 
+
+.porque{
+    background-image: linear-gradient(var(--secondary), var(--primary));
+    color: #fff;
+    margin-top: -100px;
+    padding: 100px 0 150px 0;
+    position: relative;
+}
+
+Vamos criar os elementos de titulo e vamos criar nossa estrutura de accordion
+
+<div class="container">
+            <div>
+                <h2>Ainda está com dúvida?</h2>
+                <p>Veja abaixo as perguntas frequentes</p>
+                <hr>
+            </div>
+            <div class="faqs-accordion">
+                <button>
+                    <h5>Dúvida 1</h5>
+                    <img src="./img/icon-plus.png" alt="">
+                </button>
+                <div class="panel">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus
+                        lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi
+                        tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque
+                        purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        Nosso titulo está com font size de 600
+        e o texto do parágrafo está com font size de 400
+        Olha como é importante usar classes para pegarmos as tags específicas dentros das classes
+
+
+Nas nossas classes vamos chegar o texto mais para cima utilizar a cor dark-grey definida e dar um peso nas nossas fontes
+
+
+.title-section-faqs {
+    text-align: center;
+    color:var(--dark-grey);
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.title-section-faqs h2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.title-section-faqs p {
+    font-size: 20px;
+}
+
+.title-section-faqs hr {
+    width: 10%;
+    margin: 0 auto;
+}
+
+
+No javascript ele adiciona uma classe sendo ela active e remove quando teclamos
